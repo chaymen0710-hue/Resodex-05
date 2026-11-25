@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+    <meta name="description" content="Start a real estate video project with LC Resodex. Tell us about your property, your goals, and the content you need.">
+    <title>Start a Project | LC Resodex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* Keep form controls interactive and compatible with browser autofill menus. */
+      .project-page #project-inquiry-form input,
+      .project-page #project-inquiry-form select,
+      .project-page #project-inquiry-form textarea,
+      .project-page #project-inquiry-form button {
+        pointer-events: auto;
+      }
+      .project-page #project-inquiry-form input,
+      .project-page #project-inquiry-form select,
+      .project-page #project-inquiry-form textarea {
+        position: relative;
+        z-index: 1;
+      }
+      #project-form-status:empty { display: none; }
+      #project-form-status { margin-top: 12px; }
+      #project-form-status.form-error { color: #ffb6a8; }
+    </style>
+</head>
+<body class="project-page">
+    <header class="project-nav">
+        <div class="project-nav-inner">
+            <a href="index.html#home" class="project-brand">
+                <span class="project-brand-logo"><img src="images/Logo.png" alt="LC Resodex logo"></span>
+                <span>LC Resodex</span>
+            </a>
+            <a href="index.html#home" class="project-back"><span aria-hidden="true">←</span> Back to Homepage</a>
+        </div>
+    </header>
+    <main>
+        <section class="project-hero">
+            <div class="project-hero-glow"></div>
+            <div class="project-container">
+                <div class="project-eyebrow"><span></span> START A PROJECT</div>
+                <h1>Let's create something that makes your property <em>stand out.</em></h1>
+                <p class="project-hero-text">Tell us a little about your property and your vision. We'll use your brief to understand what you need and how LC Resodex can help bring it to life.</p>
+                <div class="project-hero-meta"><span>01 — Tell us about your project</span><span>02 — Share your vision</span><span>03 — Let's discuss the next steps</span></div>
+            </div>
+        </section>
+        <section class="project-form-section">
+            <div class="project-container project-layout">
+                <aside class="project-sidebar">
+                    <span class="project-side-label">YOUR NEXT PROJECT</span>
+                    <h2>Every property has a story. <em>Let's tell yours.</em></h2>
+                    <p>Whether you're marketing a single property or preparing content for multiple listings, start by sharing the essentials.</p>
+                    <div class="project-sidebar-divider"></div>
+                    <div class="project-side-item"><span class="project-side-number">01</span><div><strong>Tell us what you need</strong><p>Choose the service that fits your project.</p></div></div>
+                    <div class="project-side-item"><span class="project-side-number">02</span><div><strong>Share the details</strong><p>Describe the property and your objectives.</p></div></div>
+                    <div class="project-side-item"><span class="project-side-number">03</span><div><strong>Start the conversation</strong><p>We'll review your inquiry and discuss the next steps.</p></div></div>
+                    <div class="project-help"><span>HAVE A QUICK QUESTION?</span><a href="mailto:hello@lcresodex.com">hello@lcresodex.com <span aria-hidden="true">↗</span></a></div>
+                </aside>
+                <div class="project-form-wrap">
+                    <div class="project-form-heading"><span>PROJECT INQUIRY</span><p>Fields marked with * are required.</p></div>
+                    <form id="project-inquiry-form" autocomplete="on" novalidate>
+                        <div class="form-section-heading"><span>01</span><div><h3>About You</h3><p>How can we reach you?</p></div></div>
+                        <div class="project-fields">
+                            <div class="project-field"><label for="client-name">Full Name *</label><input type="text" id="client-name" name="client_name" placeholder="Your full name" autocomplete="name" autocapitalize="words" required></div>
+                            <div class="project-field"><label for="client-email">Email Address *</label><input type="email" id="client-email" name="client_email" placeholder="you@company.com" autocomplete="email" inputmode="email" required></div>
+                            <div class="project-field project-field-full"><label for="client-company">Company or Agency</label><input type="text" id="client-company" name="company" placeholder="Your company name (optional)" autocomplete="organization"></div>
+                        </div>
+                        <div class="form-section-heading"><span>02</span><div><h3>What Do You Need?</h3><p>Select the type of content you're looking for.</p></div></div>
+                        <div class="project-fields">
+                            <div class="project-field project-field-full"><label for="project-service">Service *</label><select id="project-service" name="service" required><option value="" selected>Select a service</option><option>Short-Form Video</option><option>Long-Form Video</option><option>Custom Video Content</option><option>Content Bundle</option><option>Not Sure Yet</option></select></div>
+                            <div class="project-field"><label for="project-quantity">Number of Videos</label><select id="project-quantity" name="quantity"><option value="" selected>Select quantity</option><option>1 video</option><option>2–5 videos</option><option>6–10 videos</option><option>More than 10 videos</option><option>Not decided yet</option></select></div>
+                            <div class="project-field"><label for="project-format">Video Format</label><select id="project-format" name="format"><option value="" selected>Select a format</option><option>Vertical — Reels / Shorts</option><option>Horizontal — YouTube / Website</option><option>Both vertical and horizontal</option><option>Not sure yet</option></select></div>
+                        </div>
+                        <div class="form-section-heading"><span>03</span><div><h3>About the Property</h3><p>Give us some context about the listing.</p></div></div>
+                        <div class="project-fields">
+                            <div class="project-field"><label for="property-type">Property Type</label><select id="property-type" name="property_type"><option value="" selected>Select property type</option><option>Land / Plot</option><option>House / Villa</option><option>Apartment</option><option>Commercial Property</option><option>Multiple Properties</option><option>Other</option></select></div>
+                            <div class="project-field"><label for="property-location">Property Location</label><input type="text" id="property-location" name="property_location" placeholder="City and country" autocomplete="off"></div>
+                            <div class="project-field project-field-full"><label for="project-materials">What Footage Do You Have?</label><select id="project-materials" name="materials"><option value="" selected>Select available materials</option><option>Drone footage</option><option>Camera footage</option><option>Photos and images</option><option>A mix of footage and photos</option><option>I need advice on what to provide</option></select></div>
+                        </div>
+                        <div class="form-section-heading"><span>04</span><div><h3>Your Goals &amp; Timeline</h3><p>Help us understand your expectations.</p></div></div>
+                        <div class="project-fields">
+                            <div class="project-field"><label for="project-budget">Estimated Budget</label><select id="project-budget" name="budget"><option value="" selected>Select a budget range</option><option>Under $100</option><option>$100–$250</option><option>$250–$500</option><option>$500–$1,000</option><option>Over $1,000</option><option>Let's discuss</option></select></div>
+                            <div class="project-field"><label for="project-timeline">Desired Timeline</label><select id="project-timeline" name="timeline"><option value="" selected>Select a timeline</option><option>As soon as possible</option><option>Within one week</option><option>Within two to four weeks</option><option>Flexible</option></select></div>
+                            <div class="project-field project-field-full"><label for="project-message">Tell Us About Your Project *</label><textarea id="project-message" name="project_message" rows="5" placeholder="What property are you promoting? What should the video communicate? Are there any references or ideas you have in mind?" required></textarea></div>
+                        </div>
+                        <div class="project-submit-area">
+                            <p>You'll review your answers on the next page before preparing the inquiry email.</p>
+                            <button type="submit" class="project-submit"><span>Prepare My Inquiry</span><span aria-hidden="true">↗</span></button>
+                            <p class="project-form-status" id="project-form-status" role="status" aria-live="polite"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="project-page-footer"><div class="project-container project-page-footer-inner">
+        <a href="index.html#home" class="footer-brand-link" aria-label="LC Resodex — back to homepage"><span class="footer-logo"><img src="images/Logo2.png" alt="LC Resodex logo"></span><span class="footer-brand-name"><strong>LC Resodex</strong></span></a>
+        <span>Real Estate Visuals. Thoughtfully Crafted.</span><a href="index.html#home">Back to Homepage ↑</a>
+    </div></footer>
+    <script src="main.js"></script>
+</body>
+</html>

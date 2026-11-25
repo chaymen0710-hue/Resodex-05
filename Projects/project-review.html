@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0A0A0A"><title>Review Your Project | LC Resodex</title>
+  <link rel="stylesheet" href="project-review.css"><script src="project-review.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="index.html"><img src="images/Logo.png" alt="LC Resodex logo"><span>LC <b>Resodex</b></span></a>
+  <a class="contact-link" href="contact.html">Need help? <b>Contact us</b></a>
+</header>
+<main class="shell">
+  <section class="intro"><p class="eyebrow"><span></span> PROJECT INQUIRY</p><h1>Let's make sure<br><em>we have it right.</em></h1>
+    <p class="intro-copy">Review your project details before sending your inquiry to LC Resodex. If anything needs changing, go back and edit your answers.</p></section>
+  <nav class="progress" aria-label="Form progress"><div class="step done"><i>01</i><span>Your details</span></div><div class="connector"></div><div class="step active"><i>02</i><span>Review</span></div><div class="connector"></div><div class="step"><i>03</i><span>Submit</span></div></nav>
+  <section class="card">
+    <div class="card-heading"><div><p class="kicker">PLEASE CHECK</p><h2>Your project details</h2></div><span class="badge"><i></i> Ready to review</span></div>
+    <div id="empty-state" class="empty" hidden><div class="empty-mark">!</div><h3>No project details found</h3><p>Please return to the project form and enter your information first.</p><a class="button primary" href="start-project.html">Back to project form <span>↗</span></a></div>
+    <div id="review-content">
+      <div class="details">
+        <div class="item"><span class="label">Full name</span><p data-field="name">—</p></div>
+        <div class="item"><span class="label">Email address</span><p data-field="email">—</p></div>
+        <div class="item"><span class="label">Company / Agency</span><p data-field="company">—</p></div>
+        <div class="item"><span class="label">Country</span><p data-field="country">—</p></div>
+        <div class="item"><span class="label">Project type / Service</span><p data-field="service">—</p></div>
+        <div class="item"><span class="label">Number of videos</span><p data-field="quantity">—</p></div>
+        <div class="item"><span class="label">Video format</span><p data-field="format">—</p></div>
+        <div class="item"><span class="label">Property type</span><p data-field="property">—</p></div>
+        <div class="item"><span class="label">Property location</span><p data-field="location">—</p></div>
+        <div class="item"><span class="label">Estimated budget</span><p data-field="budget">—</p></div>
+        <div class="item"><span class="label">Desired timeline</span><p data-field="deadline">—</p></div>
+        <div class="item wide"><span class="label">Available materials</span><div class="tags" data-field="materials"><span class="muted">Not specified</span></div></div>
+        <div class="item wide"><span class="label">Project details</span><p class="message" data-field="details">—</p></div>
+      </div>
+      <div class="notice"><span class="info">i</span><p><b>Before you continue</b><br>Check that your contact details and requirements are correct. Sending an inquiry does not confirm a booking or start production. We'll review the scope, materials and timing with you first.</p></div>
+      <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+      <div class="actions"><a class="button secondary" id="edit-button" href="start-project.html"><span>←</span> Edit details</a><button class="button primary" id="confirm-button" type="button">Confirm &amp; submit inquiry <span>↗</span></button></div>
+      <p class="privacy">Your details should only be used to review and respond to this project inquiry.</p>
+    </div>
+  </section>
+  <div class="signature"><b>LCR</b><span>Clear communication. Thoughtful editing. A defined project scope.</span></div>
+</main>
+<footer class="footer"><span>© <span id="year">2026</span> LC Resodex</span><span>Real Estate Video Editing</span></footer>
+</body></html>
